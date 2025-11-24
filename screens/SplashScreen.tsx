@@ -4,8 +4,8 @@ import { View, Image, StyleSheet } from "react-native";
 export default function SplashScreen({ navigation }) {
   useEffect(() => {
     const timer = setTimeout(() => {
-      navigation.replace("Home"); // vai direto para a Home
-    }, 3500); // carregamento rápido (1.5s)
+      navigation.replace("MainTabs"); 
+    }, 3500); // carregamento rápido (3.5s)
 
     return () => clearTimeout(timer);
   }, []);
