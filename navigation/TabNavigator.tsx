@@ -2,7 +2,6 @@ import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Ionicons } from "@expo/vector-icons";
 
-import HomeScreen from "../screens/HomeScreen";
 import MapaScreen from "../screens/MapaScreen";
 import VoiceNavigationScreen from "../screens/VoiceNavigationScreen";
 import AlertsScreen from "../screens/AlertsScreen";
@@ -26,7 +25,6 @@ export default function TabNavigator() {
         tabBarIcon: ({ color, size }) => {
           let iconName;
 
-          if (route.name === "Home") iconName = "home";
           if (route.name === "Mapa") iconName = "map";
           if (route.name === "NavegacaoVoz") iconName = "mic";
           if (route.name === "Alertas") iconName = "warning";
@@ -36,7 +34,7 @@ export default function TabNavigator() {
         },
       })}
     >
-      <Tab.Screen name="Home" component={HomeScreen} />
+
       <Tab.Screen name="Mapa" component={MapaScreen} />
       <Tab.Screen name="NavegacaoVoz" component={VoiceNavigationScreen} />
       <Tab.Screen name="Alertas" component={AlertsScreen} />

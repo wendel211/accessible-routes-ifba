@@ -1,0 +1,7 @@
+[
+  { "id": "bloco1", "name": "Bloco 1", "x": 100, "y": 130 },
+  { "id": "bloco2", "name": "Bloco 2", "x": 300, "y": 130 },
+  { "id": "biblioteca", "name": "Biblioteca", "x": 200, "y": 280 },
+  { "id": "refeitorio", "name": "Refeitório", "x": 200, "y": 415 },
+  { "id": "entrada", "name": "Entrada", "x": 200, "y": 530 }
+]
